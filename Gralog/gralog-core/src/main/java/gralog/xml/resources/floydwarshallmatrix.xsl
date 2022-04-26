@@ -20,7 +20,7 @@ Floyd Warshall-\\
 
 \begin{tikzpicture}[x=6pt,y=7.5pt,font={\footnotesize\strut},every node/.style={circle,draw,fill=black!15}]
 <xsl:for-each select="FloydWarshall/graph/vertices/vertex">
-\node (<xsl:value-of select="id"></xsl:value-of>) at (<xsl:value-of select="x_coordinate*10"></xsl:value-of>,<xsl:value-of select="-10*y_coordinate"></xsl:value-of>) {<xsl:value-of select="id"></xsl:value-of>};
+\node (<xsl:value-of select="id"></xsl:value-of>) at (<xsl:value-of select="x_coordinate*7.5"></xsl:value-of>,<xsl:value-of select="-7.5*y_coordinate"></xsl:value-of>) {<xsl:value-of select="id"></xsl:value-of>};
 </xsl:for-each>
 \path[every node/.style={draw=white,fill=white,font={\footnotesize}}]
 <xsl:for-each select="FloydWarshall/graph/edges/edge">
@@ -32,9 +32,9 @@ Floyd Warshall-\\
 
 \begin{tabular}{<xsl:for-each select="FloydWarshall/graph/vertices/vertex">c|</xsl:for-each>c}
 \toprule
-Vertices<xsl:text disable-output-escaping="yes"><![CDATA[&]]></xsl:text><xsl:for-each select="FloydWarshall/table/vertices/vertex"><xsl:value-of select ="."></xsl:value-of> <xsl:text disable-output-escaping="yes"><![CDATA[&]]></xsl:text> </xsl:for-each>
+Vertices<xsl:text disable-output-escaping="yes"><![CDATA[&]]></xsl:text><xsl:for-each select="FloydWarshall/table/vertices/vertex"><xsl:value-of select ="."></xsl:value-of> <xsl:if test="position()!=last()" ><xsl:text disable-output-escaping="yes"><![CDATA[&]]></xsl:text></xsl:if></xsl:for-each>\\
 \midrule
-<xsl:for-each select="FloydWarshall/table/row"><xsl:value-of select="row_vertex"></xsl:value-of><xsl:text disable-output-escaping="yes"><![CDATA[&]]></xsl:text><xsl:for-each select="column"><xsl:choose><xsl:when test=".=12345.6">\infty</xsl:when><xsl:otherwise><xsl:value-of select="."></xsl:value-of></xsl:otherwise></xsl:choose><xsl:text disable-output-escaping="yes"><![CDATA[&]]></xsl:text></xsl:for-each>\\
+<xsl:for-each select="FloydWarshall/table/row"><xsl:value-of select="row_vertex"></xsl:value-of><xsl:text disable-output-escaping="yes"><![CDATA[&]]></xsl:text><xsl:for-each select="column"><xsl:choose><xsl:when test=".=12345.6">\infty</xsl:when><xsl:otherwise><xsl:value-of select="."></xsl:value-of></xsl:otherwise></xsl:choose><xsl:if test="position()!=last()" ><xsl:text disable-output-escaping="yes"><![CDATA[&]]></xsl:text></xsl:if></xsl:for-each>\\
 \midrule
 </xsl:for-each>
 \bottomrule
@@ -50,7 +50,7 @@ Iterations-\\
 \[
 I<xsl:value-of select="iteration_number"></xsl:value-of>=
 \begin{bmatrix}
-<xsl:for-each select="row"><xsl:for-each select="column"><xsl:choose><xsl:when test=".=12345.6">\infty</xsl:when><xsl:otherwise><xsl:value-of select="."></xsl:value-of></xsl:otherwise></xsl:choose><xsl:text disable-output-escaping="yes"><![CDATA[&]]></xsl:text></xsl:for-each>\\</xsl:for-each>
+<xsl:for-each select="row"><xsl:for-each select="column"><xsl:choose><xsl:when test=".=12345.6">\infty</xsl:when><xsl:otherwise><xsl:value-of select="."></xsl:value-of></xsl:otherwise></xsl:choose><xsl:if test="position()!=last()" ><xsl:text disable-output-escaping="yes"><![CDATA[&]]></xsl:text></xsl:if></xsl:for-each>\\</xsl:for-each>
 \end{bmatrix}
 \]
 </xsl:for-each>
