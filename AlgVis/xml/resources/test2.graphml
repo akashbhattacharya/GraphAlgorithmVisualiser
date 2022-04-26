@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml>
+  <graph edgedefault="undirected" type="graph">
+    <node fillcolor="#FFFFFF" id="n1" label="" radius="0.7" shapeheight="1.0" shapewidth="1.0" strokecolor="#000000" strokewidth="0.026458333333333334" textheight="0.4" x="1.6246666666666667" y="0.9473333333333349"/>
+    <node fillcolor="#FFFFFF" id="n2" label="" radius="0.7" shapeheight="1.0" shapewidth="1.0" strokecolor="#000000" strokewidth="0.026458333333333334" textheight="0.4" x="4.312833333333334" y="0.9473333333333349"/>
+    <node fillcolor="#FFFFFF" id="n3" label="" radius="0.7" shapeheight="1.0" shapewidth="1.0" strokecolor="#000000" strokewidth="0.026458333333333334" textheight="0.4" x="1.6246666666666667" y="3.5508333333333337"/>
+    <node fillcolor="#FFFFFF" id="n4" label="" radius="0.7" shapeheight="1.0" shapewidth="1.0" strokecolor="#000000" strokewidth="0.026458333333333334" textheight="0.4" x="4.312833333333334" y="3.5508333333333337"/>
+    <node fillcolor="#FFFFFF" id="n5" label="" radius="0.7" shapeheight="1.0" shapewidth="1.0" strokecolor="#000000" strokewidth="0.026458333333333334" textheight="0.4" x="3.275666666666668" y="-0.216833333333333"/>
+    <node fillcolor="#FFFFFF" id="n6" label="" radius="0.7" shapeheight="1.0" shapewidth="1.0" strokecolor="#000000" strokewidth="0.026458333333333334" textheight="0.4" x="5.582833333333333" y="-0.216833333333333"/>
+    <node fillcolor="#FFFFFF" id="n7" label="" radius="0.7" shapeheight="1.0" shapewidth="1.0" strokecolor="#000000" strokewidth="0.026458333333333334" textheight="0.4" x="5.540500000000002" y="2.450166666666666"/>
+    <edge arrowheadlength="0.2" color="#000000" isdirected="false" label="" lineType="PLAIN" source="n1" target="n5" thickness="0.025" type="BEZIER" weight="1.0"/>
+    <edge arrowheadlength="0.2" color="#000000" isdirected="false" label="" lineType="PLAIN" source="n1" target="n3" thickness="0.025" type="BEZIER" weight="1.0"/>
+    <edge arrowheadlength="0.2" color="#000000" isdirected="false" label="" lineType="PLAIN" source="n6" target="n7" thickness="0.025" type="BEZIER" weight="1.0"/>
+    <edge arrowheadlength="0.2" color="#000000" isdirected="false" label="" lineType="PLAIN" source="n5" target="n6" thickness="0.025" type="BEZIER" weight="1.0"/>
+    <edge arrowheadlength="0.2" color="#000000" isdirected="false" label="" lineType="PLAIN" source="n7" target="n4" thickness="0.025" type="BEZIER" weight="1.0"/>
+    <edge arrowheadlength="0.2" color="#000000" isdirected="false" label="" lineType="PLAIN" source="n1" target="n2" thickness="0.025" type="BEZIER" weight="1.0"/>
+    <edge arrowheadlength="0.2" color="#000000" isdirected="false" label="" lineType="PLAIN" source="n3" target="n4" thickness="0.025" type="BEZIER" weight="1.0"/>
+    <edge arrowheadlength="0.2" color="#000000" isdirected="false" label="" lineType="PLAIN" source="n2" target="n6" thickness="0.025" type="BEZIER" weight="1.0"/>
+    <edge arrowheadlength="0.2" color="#000000" isdirected="false" label="" lineType="PLAIN" source="n2" target="n4" thickness="0.025" type="BEZIER" weight="1.0"/>
+  </graph>
+</graphml>

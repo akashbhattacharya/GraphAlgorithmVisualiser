@@ -1,0 +1,1 @@
+Every file within the gralog-core/src/main/java/gralog/xml/resources folder is not a part of Gralog's source code. Gralog's codebase has been modified to include this folder and its contents.
