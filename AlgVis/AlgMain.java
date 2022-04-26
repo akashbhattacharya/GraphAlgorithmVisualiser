@@ -18,6 +18,7 @@ import xml.*;
 public class AlgMain {
     public static void main(String[] args) throws IOException, ParserConfigurationException, SAXException, TransformerException {
         int inp = 1;
+			 System.out.println("");
         Scanner scan = new Scanner(System.in);
         while (inp != 0) {
             System.out.println("Choose option- (0 to exit)");
