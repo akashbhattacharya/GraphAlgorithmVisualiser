@@ -18,13 +18,19 @@ import xml.*;
 public class AlgMain {
     public static void main(String[] args) throws IOException, ParserConfigurationException, SAXException, TransformerException {
         int inp = 1;
-			 System.out.println("");
         Scanner scan = new Scanner(System.in);
         while (inp != 0) {
-            System.out.println("Choose option- (0 to exit)");
-            System.out.println("1. Run algorithm on a selected graph and generate xml doc");
-            System.out.println("2. Apply xsl stylesheet on an xml doc");
-            inp = scan.nextInt();
+            try {
+                System.out.println("Choose option- (0 to exit)");
+                System.out.println("1. Run algorithm on a selected graph and generate xml doc");
+                System.out.println("2. Apply xsl stylesheet on an xml doc");
+                inp = scan.nextInt();
+            }
+            catch(InputMismatchException e)
+            {
+                System.out.println("The only options are 0, 1 or 2");
+                break;
+            }
             switch (inp) {
                 case 1: {
                     try {
